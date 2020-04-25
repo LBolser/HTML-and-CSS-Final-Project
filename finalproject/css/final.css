@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background: URL("../media/pebbles-seamless2.jpg");
+    background-size: 20%;
+  }
+  p{
+    font-size:1em;
+  }
+  header {
+    text-align: center;
+    padding: 0px;
+    border-bottom:3px inset black;
+    border-top:3px inset black;
+    background: URL("../media/WashingtonState1.jpg");
+    background-size: 100%;
+    background-position:center;
+  }
+  h1{
+      font-family:'Paprika', cursive;
+      font-size:3em;
+      color: black;
+      font-weight:900;
+      text-shadow:1px 1px 1px white;
+      background-color:none;
+      box-shadow:3px 3px transparent;
+  }
+  h2{
+    font-family:'Paprika', cursive;
+      font-size:1.5em;
+      color: black;
+      font-weight:900;
+      text-align:center;      
+      text-shadow:1px 1px 1px white;
+  }
+  h3{
+    font-family:'Paprika', cursive;
+      font-size:1em;
+      color: black;
+      font-weight:900;
+      text-align:center;      
+      text-shadow:1px 1px 1px white;
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  img {
+    margin-top: 8px;
+    padding:0px 0px;	
+    vertical-align: middle;
+    width: 100%;
+    transform:scale(.95 ,.95);
+    outline: 3px solid black;
+  }
+  article section img:hover{
+      transition:all 1s;
+      transform:scale(1,1);
+  }
+  
+  a:link, a:visited{
+    font-family:'Paprika', cursive;
+    text-decoration:none;
+    color:black;
+  }
+  a:hover, a:active {
+    font-family:'Paprika', cursive;
+    font-weight: bold;
+    color:white;
+  }
+  nav{
+    text-align: center;
+    margin-bottom:0px;
+    color:#fff;
+  }
+  nav ul{
+    list-style-type: none;
+    margin-bottom:0px;
+  }
+  nav li{      
+    display: inline-block;
+    padding:0px 0px;
+    margin:auto;
+    margin-bottom:0px;
+    background-color:rgba(255,255,255,.75); 
+    outline: 3px solid black;
+  }
+
+div{
+      margin-top:5px;
+      margin-bottom:10px;
+      border: 0px solid black;
+      text-align:center;
+      width: 100%;
+      transform:scale(.9 ,.9);
+      background-color:rgba(255,255,255,.75);  
+      box-shadow: 0px 0px 5px rgba(255,255,255,.75);
+  }
+
+section.paragraph{
+    background-color:rgba(255,255,255,.75);  
+    border: 3px solid black;
+    margin:6px;
+    padding: 10px;
+}
+aside{
+    border-top:3px solid black;
+    background:rgba(255,255,255,.75);  
+    margin:10px;
+    padding-top: 15px;
+    text-align: center;
+}
+footer{
+    background-color:rgba(255,255,255,.75);  
+    border: 3px solid black;
+    padding: 10px;
+    margin:10px;
+    text-align: center;
+}
+
+  /* Underline From Center */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #ff0000; /* Old browsers */
+        background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, #ff7f7f 20%, #ff0000 40%, #ff0000 60%, #ff7f7f 80%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,#ff7f7f 20%,#ff0000 40%,#ff0000 60%,#ff7f7f 80%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,#ff7f7f 20%,#ff0000 40%,#ff0000 60%,#ff7f7f 80%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255,255,255,0)', endColorstr='rgba(255,255,255,0)',GradientType=1 ); /* IE6-9 */
+
+    
+    height: 100px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        
+        .col-3 {
+        width: 50%;
+        }
+        aside{
+            display:none;
+        }
+        footer{
+            font-size:1em;
+        }
+    }
+    /* Responsive layout - makes a one column-layout instead of four columns */
+    @media screen and (max-width: 600px) {
+          body{
+            background:whitesmoke;
+        }
+        header{
+            background:whitesmoke;
+        }
+        .col-3 {
+        width: 100%;
+      }
+        aside{
+            display:none;
+        }
+        footer{
+            font-size:1em;
+            background:white;
+            color:black;
+        }
+        img{
+            transform:scale(1 ,1);
+        }
+    }
+
+    .sidenav {
+        height:120%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: -40px;
+        left: -20px;
+        background-color: rgba(255,255,255,.95);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        outline: 3px solid black;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 20px;
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: white;
+    }
+    .sidenav .closebtn {
+        position:absolute;
+        top:0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    footer a:hover {
+        color:black;
+    }
